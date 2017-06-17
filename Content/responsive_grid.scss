@@ -1,0 +1,152 @@
+$align-center: center;
+$align-middle: middle;
+$font-family:gotham_book;
+$default-color:#cccccc;
+$item-color:#49463F;
+$font-nunito:nunito;
+$display-none:none;
+
+
+h2 {
+    text-align: $align-center;
+}
+
+table caption {
+    padding: .5em 0;
+}
+
+@media screen and (max-width: 767px) {
+    table caption {
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+.p {
+    text-align: $align-center;
+    padding-top: 140px;
+    font-size: 14px;
+}
+
+.search_container{
+    padding-top:20px;
+}
+
+.button_map{
+    border-right:$display-none !important;
+}
+
+.map-symbol{
+ color:$default-color;
+}
+
+.search_box{
+    border-left:$display-none !important;
+}
+
+::-webkit-input-placeholder {
+    color:$default-color !important;
+    font-family:$font-family;
+}
+:-moz-placeholder {
+    color:$default-color !important;
+    font-family:$font-family;
+}
+::-moz-placeholder {
+    color:$default-color !important;
+    font-family:$font-family;
+}
+:-ms-input-placeholder {
+    color:$default-color !important;
+    font-family:$font-family;
+}
+
+.add_button{
+    color:#fff !important;
+    font-family: $font-family;
+    font-weight:bold !important;
+    background-color: #36C1CD !important;
+    border-color: #36c1cd !important;
+}
+
+.table-responsive{
+    margin-top:30px;
+    overflow-y: auto !important;
+    overflow-x: inherit !important;
+}
+
+.table_heading{
+    text-transform:uppercase !important;
+    font-family:gotham_bold;
+    color:$default-color;
+    font-size:10px;
+}
+
+    .table_heading:hover, .table_heading:active, .table_heading:focus {
+    text-decoration:$display-none;
+    color:$default-color;
+    }
+
+.item_image, .item_details{
+    display: inline-block;
+    vertical-align: $align-middle;
+}
+
+.item_details{
+    padding-left:10px;
+}
+
+.item_name{
+    color:$item-color;
+    font-family: $font-nunito;
+    font-size:15px;
+    margin-bottom:5px;
+}
+
+.item_category{
+    color:$default-color;
+    font-family: $font-nunito;
+    font-size:13px;
+    text-transform: capitalize;
+    margin-bottom:0;
+}
+
+.item_price{
+    color:$item-color;
+    font-family:$font-family;
+    font-size:14px;
+}
+
+.split{
+    border:$display-none !important;
+    padding-left:0 !important;
+    background-color: transparent !important;
+}
+
+.item_split{
+    font-family: $font-family;
+    }
+
+.participants{
+    font-family:$font-family;
+    font-size:14px;
+}
+
+.share{
+    font-family:$font-family;
+    color:#70AF16;
+    font-size:14px;
+}
+
+/*bootstrap over ride*/
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th{
+    vertical-align: $align-middle !important;
+}
+
+.open > .dropdown-menu{
+    z-index:99;
+}
+
+.btn-group-sm > .btn, .btn-sm{
+    font-size:14px !important;
+}
